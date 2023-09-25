@@ -1,26 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta name="viewport" cont="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css" type="text/css">
         <title>Forside</title>
     </head>
     <body>
+        <!--Header område-->
         <header>
             <nav>
                 <span>
                     <a href="index.html">Logo</a>
                 </span>
                 <ul>
-                    <li><a href="about.html">about</a></li>
-                    <li><a href="#">subscribe</a></li>
-                    <li><a href="#">contact</a></li>
+                    <!--Linker til id som heter about-section, laget snarvei-->
+                    <li><a href="#about-section">about</a></li>
+                    <!--Linker til annet html dokument (side) på nettstedet-->
+                    <li><a href="subscribe.html">subscribe</a></li>
+                    <!--Linker til annet nettsted-->
+                    <li><a href="https://www.google.com">google</a></li>
                 </ul>
             </nav>
             <h1>Hello world!</h1>
             <p>Slagord</p>
         </header>
+        <main>
+            <section>
+                <h2>Latest news</h2>
+                <article>
+                    <img src="img/cat-8197577_640.jpg" alt="grå katt som koser seg">
+                    <h3>Grå pus</h3>
+                    <p>Sed accumsan urna ac enim viverra bibendum. Donec vitae pulvinar mauris. Nam cursus accumsan diam a viverra. Maecenas ultrices nibh ut tellus euismod, sit amet volutpat risus vehicula.</p>
+                    <a href="#" class="read-more-btn">Les mer</a>
+                </article>
+                <article>
+                    <img src="img/turtle-8105993_640.jpg" alt="En kul skilpadde som dukker opp i havorverflaten">
+                    <h3>En skilpadde</h3>
+                    <p>Nam volutpat lacus lorem, a laoreet mauris faucibus vel. Etiam id justo non tortor sollicitudin molestie. Sed nec ex sed neque rhoncus varius. Vivamus ipsum ante, pharetra quis felis tincidunt, auctor lobortis neque.</p>
+                    <a href="#" class="read-more-btn">Les mer</a>
+                </article>
+                <article>
+                    <img src="img/willow-warbler-8071472_640.jpg" alt="En liten pippip">
+                    <h3>En liten pippip</h3>
+                    <p>Etiam ut ligula pretium, tincidunt tortor ut, volutpat lectus. Vestibulum auctor interdum pulvinar. Suspendisse risus mauris, eleifend sed congue at, ornare at arcu. Sed mattis elit sit amet justo iaculis ornare. Vivamus tincidunt luctus gravida.</p>
+                    <a href="#" class="read-more-btn">Les mer</a>
+                </article>
+            </section>
+        </main>
+        <section id="about-section">
+            <div id="pynt">
 
-
+            </div>
+            <h2>About</h2>
+            <p>Nullam nec porta velit. Vestibulum sagittis orci quis tristique scelerisque. Donec in rutrum felis.</p>
+        </section>
+        <section id="subscribe">
+            <h3>Subscribe</h3>
+            <form>
+                <label for="email-signup">Email for newsletter sign-up</label>
+                <input type="text" id="email-signup">
+                <input type="submit" value="Sign up">
+            </form>
+        </section>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Subscribe</a></li>
+                </ul>
+            </nav>
+            <ul id="social-icons">
+                <li>f</li>
+                <li>i</li>
+                <li>p</li>
+            </ul>
+        </footer>
     </body>
 </html>
